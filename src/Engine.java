@@ -1,4 +1,6 @@
 public interface Engine {
 
-    void checkEngine() ;
+    default void checkEngine() {
+        System.out.println("Проверяем двигатель");
+    }
 }

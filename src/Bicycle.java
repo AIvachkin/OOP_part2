@@ -1,11 +1,12 @@
-public class Bicycle extends Machine implements Check {
+public class Bicycle extends Machine implements Check{
 
 
     public Bicycle(String modelName, int wheelsCount) {
 
         super(modelName, wheelsCount);
     }
-    private void updateTyre(){
+    @Override
+    public void updateTyre(){
         System.out.println("Меняем покрышку велосипеда");
     }
     @Override

@@ -1,4 +1,8 @@
 public interface Tyre {
 
-    void updateTyre() ;
+    default void updateTyre() {
+        System.out.println("Меняем колеса");
+    }
+
+
 }

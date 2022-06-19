@@ -1,14 +1,17 @@
-public class Truck extends Machine implements Check {
+public class Truck extends Machine implements Check, Engine {
 
     public Truck(String modelName, int wheelsCount) {
 
         super(modelName, wheelsCount);
     }
-    private void updateTyre(){
+
+
+    @Override
+    public void updateTyre(){
         System.out.println("Меняем покрышку грузовика");
     }
-
-    private void checkEngine () {
+@Override
+    public void checkEngine () {
         System.out.println("Проверяем двигатель грузовика");
     }
     private void checkTrailer () {

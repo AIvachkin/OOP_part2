@@ -1,4 +1,4 @@
-public abstract class Machine  {
+public abstract class Machine implements Tyre {
 
     private String modelName;
     private int wheelsCount;
